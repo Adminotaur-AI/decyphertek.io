@@ -3,6 +3,7 @@ Decoding Technology.
 * How to create an concise sysadmin AI system.
 * LLM can ping questions to specialized machine learning models.
 * Everythong is off until a question is asked that activates a specialized machine learning model.
+* LPIC reference model, ability to run bash , ansible , terrfarom , opentofu , python , automatically. 
 
 1. Kubernetes:
 --------------
