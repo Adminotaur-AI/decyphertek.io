@@ -1,5 +1,8 @@
 # [decyphertek.io](https://decyphertek.io/)
 Decoding Technology.
+* How to create an concise sysadmin AI system.
+* LLM can ping questions to specialized machine learning models.
+* Everythong is off until a question is asked that activates a specialized machine learning model.
 
 1. Kubernetes:
 --------------
@@ -110,7 +113,7 @@ docker compose up -d
 
 4. Brainboard ( Terraform )
 ---------------------------
-* https://www.brainboard.co/
+* [https://www.brainboard.co/](https://www.pluralith.com/)
 
 5. Theory
 --------
