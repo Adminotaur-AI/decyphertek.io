@@ -1,5 +1,4 @@
 # decyphertek.io
-=================
 Decoding Technology
 
 1. Kubernetes:
