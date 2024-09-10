@@ -16,6 +16,7 @@ sudo k0s status
 sudo k0s kubectl get nodes
 ```
 
+
 2. Kubeflow:
 ------------
 ```
@@ -44,6 +45,7 @@ sudo systemctl enable snap.microk8s.daemon-apiserver-kicker
 juju status --watch 5s
 ```
 
+
 3. Open Web UI:
 ---------------
 ~~~
@@ -54,13 +56,16 @@ docker compose up -d
 http://IP-OF-SERVER:3000
 ~~~
 
+
 4. Pluralith - Open Source branboard alternaitve ( Terraform ):
 ---------------------------
 * [https://pluralith.com](https://www.pluralith.com/)
 
+
 5. Theory:
 --------
 * AI should simulate brain function. The brain optimizes energy consumption and this can be achieved with Kubernetes.
+
 
 6. Cloud Theory:
 -----------------
