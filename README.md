@@ -43,78 +43,17 @@ juju status --watch 5s
 
 3. Open Web UI:
 ---------------
-* I may need Ollama3 added to the docker-compose.yml , still in Dev.
-* Need a GPU or Very slow during testing. 
 ~~~
-vim docker-compose.yml
-
-services:
-
-  ingress:
-    image: nginx:latest
-    container_name: nginx-reverse-proxy
-    restart: always
-    ports:
-      - 9443:9443
-      - 443:443
-    volumes:
-      - nginx_conf:/etc/nginx/conf.d/
-      - nginx_key:/etc/ssl/private/
-      - nginx_cert:/etc/ssl/certs/
-      - nginx_log:/var/log/
-    networks:
-      decyphertek-net:
-        ipv4_address: 172.19.0.19
-
-  portainer:
-    image: portainer/portainer-ce:latest
-    container_name: portainer
-    restart: always
-    expose:
-      - "9000"
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-      - portainer_data:/data
-    networks:
-      decyphertek-net:
-        ipv4_address: 172.19.0.20
-
-  open-webui:
-    image: ghcr.io/open-webui/open-webui:main
-    container_name: open-webui
-    restart: always
-    expose:
-      - "8080"
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
-    volumes:
-      - /home/adminotaur/.docker:/app/backend/data
-    networks:
-      decyphertek-net:
-        ipv4_address: 172.19.0.21
-
-volumes:
-  open-webui:
-  nginx_conf:
-  nginx_key:
-  nginx_cert:
-
-networks:
-  decyphertek-net:
-    driver: bridge
-    ipam:
-      config:
-        - subnet: 172.19.0.0/16
-
+git clone https://github.com/open-webui/open-webui.git
+cd open-webui
+docker compose build
 docker compose up -d
-# need default.conf
-# openssl self signed certs
-# .env
+http://IP-OF-SERVER:3000
 ~~~
 
 4. Brainboard ( Terraform ):
 ---------------------------
-* [https://www.brainboard.co/](https://www.pluralith.com/)
+* [pluralith](https://www.pluralith.com/)
 
 5. Theory:
 --------
