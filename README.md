@@ -8,9 +8,12 @@ Decoding Technology.
 1. Kubernetes:
 --------------
 ```
-curl -sfL https://get.k3s.io | sh - 
-# Check for Ready node, takes ~30 seconds 
-sudo k3s kubectl get node
+curl -sSLf https://get.k0s.sh | sudo sh
+sudo k0s install controller --single
+sudo systemctl daemon-reload
+sudo k0s start
+sudo k0s status
+sudo k0s kubectl get nodes
 ```
 
 2. Kubeflow:
