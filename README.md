@@ -190,3 +190,10 @@ resource "aws_iam_role" "node_role" {
   })
 }
 ```
+
+```
+tofu init
+tofu plan -out=tfplan
+tofu apply tfplan
+aws eks --region us-east-1 update-kubeconfig --name my-cluster
+```
