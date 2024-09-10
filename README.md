@@ -54,9 +54,9 @@ docker compose up -d
 http://IP-OF-SERVER:3000
 ~~~
 
-4. Brainboard ( Terraform ):
+4. Pluralith - Open SOurce branboard alternaitve ( Terraform ):
 ---------------------------
-* [pluralith](https://www.pluralith.com/)
+* [https://pluralith.com](https://www.pluralith.com/)
 
 5. Theory:
 --------
