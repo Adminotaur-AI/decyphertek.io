@@ -1,5 +1,5 @@
 # [decyphertek.io](https://decyphertek.io/)
-Decoding Technology
+Decoding Technology.
 
 1. Kubernetes:
 --------------
