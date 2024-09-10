@@ -54,7 +54,7 @@ docker compose up -d
 http://IP-OF-SERVER:3000
 ~~~
 
-4. Pluralith - Open SOurce branboard alternaitve ( Terraform ):
+4. Pluralith - Open Source branboard alternaitve ( Terraform ):
 ---------------------------
 * [https://pluralith.com](https://www.pluralith.com/)
 
