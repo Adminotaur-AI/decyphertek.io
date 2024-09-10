@@ -24,8 +24,7 @@ sudo snap install microk8s --classic
 sudo usermod -a -G microk8s $USER
 newgrp microk8s
 sudo chown -f -R $USER ~/.kube
-# Modified - Delayed install metallb and ingress , so it works on startupscript, so doesnt delete anything.
-microk8s enable dns ingress cert-manager hostpath-storage rbac
+microk8s enable dns ingress cert-manager hostpath-storage rbac metallb:YOUR.LOCAL.IP-YOUR.LOCAL.IP
 microk8s status --wait-ready
 sudo snap install juju --classic 
 mkdir -p ~/.local/share
@@ -43,6 +42,10 @@ sudo systemctl enable snap.microk8s.daemon-cluster-agent
 sudo systemctl enable snap.microk8s.daemon-k8s-dqlite
 sudo systemctl enable snap.microk8s.daemon-apiserver-kicker
 juju status --watch 5s
+microk8s kubectl -n kubeflow get svc istio-ingressgateway-workload -o jsonpath='{.status.loadBalancer.ingress[0].ip}'
+juju config dex-auth static-username=admin
+juju config dex-auth static-password=admin
+# http://YOUR.IP.HERE.nip.io
 ```
 
 
