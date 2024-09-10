@@ -112,11 +112,11 @@ docker compose up -d
 # .env
 ~~~
 
-4. Brainboard ( Terraform )
+4. Brainboard ( Terraform ):
 ---------------------------
 * [https://www.brainboard.co/](https://www.pluralith.com/)
 
-5. Theory
+5. Theory:
 --------
 * AI should simulate brain function. The brain optimizes energy consumption and this can be achieved with Kubernetes.
 
